@@ -1,0 +1,44 @@
+<%= form_with(model: content, local: true,html: { multipart: true }) do |form| %>
+<% if content.errors.any? %>
+  <div id="error_explanation">
+    <h2><%= pluralize(content.errors.count, "error") %>
+      prohibited this content from being saved:</h2>
+
+    <ul>
+      <% content.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+<div class="field">
+  <label class="grey-text">Carica il contenuto digitale che vuoi vendere(formati supportati PowerPoint, Excel, Word, PDF, Immagini e MP3)</label>
+  <br>
+  <%= form.file_field :allegato %>
+</div>
+<div class="field">
+  <%= form.label :titolo %>
+  <%= form.text_field :titolo, id: :content_titolo %>
+</div>
+
+<div class="field">
+  <%= form.label :descrizione %>
+  <%= form.text_area :descrizione, id: :content_descrizione, class: "materialize-textarea" %>
+</div>
+
+<div class="field">
+  <%= form.label :Prezzo %>
+  <%= form.text_field :price, id: :content_price %>
+</div>
+
+<div class="field">
+  <label class="grey-text">Carica un immagine da utilizzare come anteprima del tuo contenuto</label>
+  <br>
+  <%= form.file_field :cover %>
+</div>
+<br>
+<div class="actions">
+  <%= form.submit 'Salva contenuto', class: "btn btn-form" %>
+</div>
+<br>
+<% end %>

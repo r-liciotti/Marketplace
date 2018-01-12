@@ -1,0 +1,6 @@
+<h1 class="center">Modfica contenuto <%= @content.titolo %></h1>
+
+<%= render 'form', content: @content %>
+
+<%= link_to 'Mostra contenuto', @content %> |
+<%= link_to 'Torna ai contenuti', contents_path %>
