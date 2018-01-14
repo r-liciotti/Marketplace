@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180114175559) do
+ActiveRecord::Schema.define(version: 20180114181527) do
 
   create_table "contents", force: :cascade do |t|
     t.string "titolo"
@@ -27,6 +27,8 @@ ActiveRecord::Schema.define(version: 20180114175559) do
     t.string "allegato_content_type"
     t.integer "allegato_file_size"
     t.datetime "allegato_updated_at"
+    t.string "slug"
+    t.index ["slug"], name: "index_contents_on_slug", unique: true
   end
 
   create_table "friendly_id_slugs", force: :cascade do |t|
