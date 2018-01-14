@@ -15,6 +15,7 @@
  */
 
 @import "materialize";
+
 body {
     display: flex;
     min-height: 100vh;
@@ -44,3 +45,17 @@ body {
   .btn-form{
     width: 100%;
   }
+
+  .card-image{
+    height: 150px;
+  }
+
+  .pagination  a li.active{
+  color: #fff;
+  height: 23px;
+  width: 23px;
+  padding-top: 1px;
+}
+.pagination a li{
+  margin-top: 4px;
+}

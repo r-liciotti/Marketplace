@@ -5,4 +5,8 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable
 
  has_many :contents
+
+# validazione per nome, emil e pass gia di default di device
+ validates :name, presence: true
+
 end
