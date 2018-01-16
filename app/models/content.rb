@@ -21,7 +21,7 @@ class Content < ApplicationRecord
     validates :titolo, :descrizione, :price, presence: true
 
     # greater_than: 49 perche il metodo di pa gamento Stripe accetta minimo 50 centesimi
-    validates :price, numericality: { greater_than: 49 }
+    validates :price, numericality: { greater_than: 0.49 }
 
     validates :cover, attachment_presence: true
     validates :allegato, attachment_presence: true
