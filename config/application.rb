@@ -17,5 +17,8 @@ module Marketplace
 
     config.i18n.default_locale = :it
 
+    config.assets.initialize_on_precompile = false
+
+
   end
 end
