@@ -16,3 +16,11 @@
 //= require turbolinks
 //= require_tree .
 //= require materialize
+
+$(document).ready(function(){
+    $('.materialboxed').materialbox();
+  });
+        
+$(document).ready(function(){
+     $('.parallax').parallax();
+   });

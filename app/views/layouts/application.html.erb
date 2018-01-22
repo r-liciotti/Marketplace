@@ -8,8 +8,9 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,600" rel="stylesheet">
 
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   </head>
   <!-- Header, Footer -->
   <body>
@@ -24,6 +25,8 @@
       </script>
       <% end %>
     </div>
+
+    <%= render 'pages/slider' if action_name == 'home'%>
 
     <main class="container">
       <!-- yield -> carica le pages home e about --->

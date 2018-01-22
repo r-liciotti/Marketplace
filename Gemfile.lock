@@ -83,6 +83,8 @@ GEM
     faraday (0.13.1)
       multipart-post (>= 1.2, < 3)
     ffi (1.9.18)
+    font-awesome-sass (4.7.0)
+      sass (>= 3.2)
     friendly_id (5.1.0)
       activerecord (>= 4.0.0)
     globalid (0.4.1)
@@ -234,6 +236,7 @@ DEPENDENCIES
   coffee-rails (~> 4.2)
   devise
   dotenv-rails
+  font-awesome-sass
   friendly_id (~> 5.1.0)
   jbuilder (~> 2.5)
   jquery-rails
@@ -256,6 +259,9 @@ DEPENDENCIES
   web-console (>= 3.3.0)
   will_paginate (~> 3.1.0)
   will_paginate-materialize (~> 0.1.0)
+
+RUBY VERSION
+   ruby 2.5.0p0
 
 BUNDLED WITH
    1.16.1
